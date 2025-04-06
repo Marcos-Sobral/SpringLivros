@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 
 
-@RestController
-@RequestMapping("/livros")
+@RestController // Diz que essa classe é uma API
+@RequestMapping("/livros") // Caminho base da API
 public class LivroController {
 
     @Autowired

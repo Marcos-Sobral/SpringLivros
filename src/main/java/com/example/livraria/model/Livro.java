@@ -6,10 +6,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
+@Entity // Diz que essa classe é uma entidade (tabela)
 @Table(name = "livros")
 public class Livro {
-    @Id
+    @Id // Diz que é a chave primária
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
